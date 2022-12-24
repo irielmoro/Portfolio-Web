@@ -1,0 +1,40 @@
+.habilidades{
+    background: linear-gradient(108.28deg, #50197C 1.29%, #1F0440 82.63%);
+    padding: 3rem;
+}
+
+.habilidades__card-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 3rem 5rem;
+    width: 75%;
+    margin: auto;
+}
+
+.habilidades__card-icon{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.habilidades__card-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-font-white);
+}
+
+.habilidades__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-separator{
+    mix-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}

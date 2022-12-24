@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+@import url(inicio.css);
+@import url(proyectos.css);
+@import url(habilidades.css);
+@import url(contacto.css);
+
+:root{
+    --color-font-white: #F1F1F1;
+    --color-font-black: #2B2B2B;
+    --color-background-black: #131313;
+}
+
+
+
+
+
+

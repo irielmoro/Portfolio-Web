@@ -1,0 +1,171 @@
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+
+    /*INICIO*/
+    .inicio {
+        height: auto;
+    }
+    nav a{
+        margin: 1rem;
+        font-size: 12px;
+    }
+
+    .shape{
+        width: initial;
+    }
+    .inicio__background{
+      position: relative;
+      top: 6rem;
+      left: 3rem;
+    }
+
+    .inicio__container {
+        margin: 0px 2rem;
+    }
+
+    .inicio__title {
+        font-size: 78px;
+    }
+
+    .inicio__subtitle {
+        font-size: 16px;
+    }
+
+    .inicio__subtitle-2 {
+        font-size: 13px;
+    }
+
+    .inicio__illustration img {
+        width: 336px;
+        height: inherit;
+    }
+
+    .inicio__contact{
+        margin-bottom: 1rem;
+    }
+    .inicio__contact-logo{
+        margin: 1rem 1rem 0 0;
+    }
+    .inicio__contact-logo img{
+        width: 65%;
+    }
+
+    .logo-title{
+        font-size: 11px;
+    }
+
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    /*PROYECTOS*/
+    .proyectos__card-description {
+        font-size: 15px;
+    }
+    .proyectos__card-title {
+        font-size: 20px;
+    }
+    .proyectos__card-btn {
+        font-size: 14px;
+        margin-right: -1rem;
+    }
+    .proyectos__card-text {
+        padding: 1.4rem;
+    }
+    .proyectos__card-languages p{
+        font-size: small;
+    }
+
+    /*HABILIDADES*/
+    .habilidades__card-container {
+        gap: 1rem 2rem;
+    }
+    .habilidades__card-icon {
+        max-width: 68%;
+    }
+    .habilidades__card-title{
+        font-size: 15px;
+    }
+    
+    /*CONTACTO*/
+    .contacto__input, label{
+        font-size: 1rem;
+    }
+
+    .elipse img{
+        width: 80%;
+    }
+
+    .contacto__btn-enviar{
+        font-size: 17px;
+
+    }
+}
+
+/*Mobile L*/
+@media only screen and (max-width: 425px){
+
+    /*INICIO*/
+    nav{
+        justify-content: center;
+    }
+
+    .inicio__container {
+        display: block;
+        margin: 0px 1rem;
+    }
+    .inicio__text{
+     width: auto;
+    }
+
+    .illustration-top{
+        display: block;
+        margin-top: -3rem;
+    }
+    .illustration-bottom{
+        display: none;
+    }
+    .inicio__illustration img {
+        width: -webkit-fill-available;
+    }
+
+    .inicio__contact {
+        justify-content: center;
+    }
+
+    /*PROYECTOS*/
+    .proyectos__card-container{
+        flex-direction: column;
+    }
+    .proyectos__card{
+        width: auto;
+    }
+
+    /*HABILIDADES*/
+    .habilidades__card-container{
+        width: inherit;
+        margin: 0;
+    }
+
+    /*CONTACTO*/
+    .contacto__elipse3 {
+        top: -14%;
+        left: 9%;
+    }
+    .elipse img {
+        width: 112%;
+    }
+    .contacto__elipse1 {
+        top: -13%;
+        left: 64%;
+    }
+    .contacto__elipse2 {
+        top: 58%;
+        left: -24%;
+    }
+    .contacto__elipse3 {
+        display: none;
+    }
+
+}
