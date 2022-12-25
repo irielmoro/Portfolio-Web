@@ -6,7 +6,7 @@
     color: var(--color-font-white);
     font-size: 35px;
 }
-.btn:hover, .logo-title:hover{
+.btn:hover{
   color: #873694 ;
 }
 
