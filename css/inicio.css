@@ -110,11 +110,12 @@ nav a{
 
 .inicio__contact{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 .inicio__contact-logo{
     text-align: center;
-    margin: 2.5rem 2.5rem 0 0;
 }
 .logo-title{
     font-size: 15px;
