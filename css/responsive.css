@@ -11,13 +11,9 @@
     }
 
     .shape{
-        width: initial;
+        width: 40%;
     }
-    .inicio__background{
-      position: relative;
-      top: 6rem;
-      left: 3rem;
-    }
+   
 
     .inicio__container {
         margin: 0px 2rem;
@@ -108,7 +104,9 @@
 
     /*INICIO*/
     nav{
-        justify-content: center;
+        position: fixed;
+        top: 0;
+        justify-content: flex-start;
     }
 
     .inicio__container {
@@ -167,5 +165,7 @@
     .contacto__elipse3 {
         display: none;
     }
-
+    .contacto__form{
+        width: 75%;
+    }
 }

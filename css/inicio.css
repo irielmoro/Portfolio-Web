@@ -1,21 +1,16 @@
 .inicio{
-    width: 100vw;
-    height: 585px;
-    background-color: #000;
+    background: black;
     overflow: hidden;
     position: relative;
 }
 
-header{
-    display: flex;
-    justify-content: flex-end;
-}
-
 .shape{
     position: absolute;
-    width: 130%;
-    animation: shape-translate 5s linear infinite ;
+    filter: blur(102px);
+
+    animation: shape-translate 8s linear infinite ;
 }
+
 @keyframes shape-translate{
     0%{
         transform: rotate(0deg);
@@ -26,24 +21,53 @@ header{
         transform: rotate(-360deg);
     }
 }
+
+.inicio__background{
+    width: 100%;
+    height: auto;
+}
+
 .inicio__background-shape1{
-    top: -679px;
-    left: -358px;
-    z-index: 1;
+    width: 500px;
+    height: 500px;
+    
+
+    background: #4E2F7C;
+    border-radius: 83% 17% 47% 53% / 79% 14% 86% 21% ;
+
+    left: 31.42%;
+    top: -42%;
 
 }
 .inicio__background-shape2{
-    top: -289px;
-    left: -59px;
-    z-index: 2;
+    width: 600px;
+    height: 600px;
+    
+    background: #244678;
+    border-radius: 28% 72% 86% 14% / 12% 55% 45% 88% ;
+
+    left: 64.42%;
+    top: -10%;
 }
 .inicio__background-shape3{
-    top: -571px;
-    left: 185px;
+    width: 500px;
+    height: 500px;
+    
+    background: #AC5A86;
+    border-radius: 14% 86% 86% 14% / 88% 86% 14% 12%  ;
+
+    left: -2%;
+    top: -9%;
 }
 .inicio__background-shape4{
-    top: -369px;
-    left: -810px;
+    width: 500px;
+    height: 500px;
+    
+    background: #A292E8;
+    border-radius: 18% 82% 86% 14% / 7% 19% 81% 93%  ;
+
+    left: 28.42%;
+    top: 29%;
 }
 
 main{
@@ -51,11 +75,16 @@ main{
     z-index: 3;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
     width: 100%;
 
     transition: all 0.5s;
