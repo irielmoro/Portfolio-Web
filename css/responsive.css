@@ -5,9 +5,17 @@
     .inicio {
         height: auto;
     }
+
+    nav{
+        padding: 0.2rem 0;
+    }
     nav a{
         margin: 1rem;
         font-size: 12px;
+    }
+
+    .logo img{
+        width: 60%;
     }
 
     .shape{
@@ -97,6 +105,9 @@
         font-size: 17px;
 
     }
+    .contacto__footer > h4 {
+        font-size: 18px;
+    }
 }
 
 /*Mobile L*/
@@ -104,9 +115,11 @@
 
     /*INICIO*/
     nav{
-        position: fixed;
-        top: 0;
-        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    .logo{
+        display: none;
     }
 
     .inicio__container {
