@@ -1,14 +1,6 @@
 .inicio{
-    background: black;
     overflow: hidden;
     position: relative;
-}
-
-.shape{
-    position: absolute;
-    filter: blur(102px);
-
-    animation: shape-translate 8s linear infinite ;
 }
 
 @keyframes shape-translate{
@@ -22,63 +14,34 @@
     }
 }
 
-.inicio__background{
-    width: 100%;
-    height: auto;
-}
 
 .inicio__background-shape1{
-    width: 500px;
-    height: 500px;
-    
+    position: absolute;
 
-    background: #4E2F7C;
-    border-radius: 83% 17% 47% 53% / 79% 14% 86% 21% ;
-
-    left: 31.42%;
-    top: -42%;
+    left: -2%;
+    top: -2%;
 
 }
 .inicio__background-shape2{
-    width: 600px;
-    height: 600px;
-    
-    background: #244678;
-    border-radius: 28% 72% 86% 14% / 12% 55% 45% 88% ;
+    position: absolute;
 
-    left: 64.42%;
-    top: -10%;
+    left: 84%;
+    top: 33%;
 }
-.inicio__background-shape3{
-    width: 500px;
-    height: 500px;
-    
-    background: #AC5A86;
-    border-radius: 14% 86% 86% 14% / 88% 86% 14% 12%  ;
 
-    left: -2%;
-    top: -9%;
-}
-.inicio__background-shape4{
-    width: 500px;
-    height: 500px;
-    
-    background: #A292E8;
-    border-radius: 18% 82% 86% 14% / 7% 19% 81% 93%  ;
-
-    left: 28.42%;
-    top: 29%;
-}
 
 main{
     position: relative;
-    z-index: 3;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
 }
 
 header{
     position: fixed;
-    top: 0;
-    width: 100%;
+    z-index: 1;
+    right: 0%;
+    width: 100vw;
 }
 
 nav{
@@ -106,42 +69,51 @@ nav.color{
     background: #000000d4;
 }
 
-nav a{
+nav a.white{
     color: var(--color-font-white);
+}
+
+nav a{
+    color: var(--color-font-black);
     margin: 1.2rem 2rem;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .inicio__container{
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
 }
 
-.illustration-top{
-    display: none;
+.inicio__photo{
+    background: rgb(72 72 72 / 10%);
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+    margin-right: 3rem;
+    border: 2px solid white;
 }
-.inicio__illustration img{
-    width: 471px;
-    height: 347px;
-    margin-top: 5rem;
+.inicio__photo img{
+    width: 226px;
 }
 
 
 .inicio__text{
     width: 567px;
     margin-top: 3rem;
-    color: var(--color-font-white);
+    color: var(--color-font-black);
 }
 .inicio__title{
-    font-size: 104px;
+    font-size: 80px;
     font-weight: 800;
 }
 .inicio__subtitle{
-    font-size: 25px;
+    font-size: 20px;
 }
 .inicio__subtitle-2{
-    font-size: 19px;
+    font-size: 15px;
     margin: 1rem 0;
 }
 
@@ -155,8 +127,27 @@ nav a{
 .inicio__contact-logo{
     text-align: center;
 }
+
+.inicio__contact-logo img{
+    min-height: 21px;
+    max-height: 26px;
+}
+
 .logo-title{
     font-size: 15px;
     margin-top: 0.4rem;
     color: var(--color-font-white);
+}
+
+.inicio__arrow{
+    text-align: center;
+    color: #533681;
+    font-weight: 700;
+    margin-top: 4rem;
+    align-self: end;
+}
+
+.inicio__arrow p{
+    margin-bottom: 1rem;
+    font-weight: 100;
 }

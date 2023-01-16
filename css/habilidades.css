@@ -1,19 +1,37 @@
 .habilidades{
-    background: linear-gradient(108.28deg, #50197C 1.29%, #1F0440 82.63%);
     padding: 3rem;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.habilidades__background-shape1{
+    position: absolute;
+    width: 25%;
+    right: -5%;
+    top: 3%;
+}
+.habilidades__background-shape2{
+    position: absolute;
+    left: -15%;
+    top: 38%;
 }
 
 .habilidades__card-container{
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 3rem 5rem;
-    width: 75%;
-    margin: auto;
+}
+
+.habilidades__card-container--tecnicas{
+    margin-top:3rem;
+    justify-content: flex-end;
+    padding-left: 20rem;
+    gap: 3rem;
 }
 
 .habilidades__card-icon{
+    width: 70%;
     max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
@@ -21,9 +39,9 @@
 
 .habilidades__card-title{
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--color-font-white);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-font-black);
 }
 
 .habilidades__card{

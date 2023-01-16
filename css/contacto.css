@@ -1,5 +1,5 @@
 .contacto{
-    background: var(--color-background-black);
+    background: linear-gradient(267.68deg, #341E57 22.44%, #0B1736 89.8%);
     padding: 3rem;
 }
 
@@ -36,10 +36,17 @@
 
     width: 40%;
 
-    background: #4c4c4c2e;
+    /* background: #4c4c4c2e;
     box-shadow: 1px 4px 12px rgb(0 0 0 / 50%);
     backdrop-filter: blur(7.5px);
-    border-radius: 30px;
+    border-radius: 30px; */
+
+    background: rgba(0, 0, 0, 0.08);
+border: 1.8px solid #FFFFFF;
+box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(7.5px);
+
+border-radius: 30px;
 }
 
 .contacto__input-group{
@@ -111,4 +118,5 @@ input:-internal-autofill {
     font-size: 25px;
     font-weight: 400;
     text-align: center;
+    color: var(--color-font-white);
 }

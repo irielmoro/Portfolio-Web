@@ -18,8 +18,16 @@
         width: 60%;
     }
 
-    .shape{
-        width: 40%;
+    .inicio__background-shape1{
+        width: 39%;
+        left: -2%;
+        top: 0;
+    
+    }
+    .inicio__background-shape2{
+        width: 22%;
+        left: 84%;
+        top: 33%;
     }
    
 
@@ -27,25 +35,34 @@
         margin: 0px 2rem;
     }
 
+    .inicio__photo{
+        width: 160px;
+        height: 160px;
+    }
+
+    .inicio__photo img{
+        width: 160px;
+    }
+
+    .inicio__text{
+        width: 400px;
+    }
     .inicio__title {
-        font-size: 78px;
+        font-size: 56px;
     }
 
     .inicio__subtitle {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .inicio__subtitle-2 {
-        font-size: 13px;
+        font-size: 12px;
+        width: 70%;
     }
 
-    .inicio__illustration img {
-        width: 336px;
-        height: inherit;
-    }
 
     .inicio__contact{
-        margin-bottom: 1rem;
+        gap: 1rem;
     }
     .inicio__contact-logo{
         margin: 1rem 1rem 0 0;
@@ -64,29 +81,49 @@
     }
 
     /*PROYECTOS*/
+    .proyectos__card-container{
+        grid-template-columns: repeat(auto-fit, minmax(34%, 1fr));
+    }
     .proyectos__card-description {
-        font-size: 15px;
+        font-size: 11px;
+        min-height: auto;
     }
     .proyectos__card-title {
-        font-size: 20px;
+        font-size: 16px;
     }
     .proyectos__card-btn {
-        font-size: 14px;
+        font-size: 11px;
         margin-right: -1rem;
     }
     .proyectos__card-text {
-        padding: 1.4rem;
+        padding: 1.1rem;
     }
     .proyectos__card-languages p{
         font-size: small;
     }
 
     /*HABILIDADES*/
-    .habilidades__card-container {
+    /* .habilidades__card-container {
         gap: 1rem 2rem;
+    } */
+
+    .habilidades__background-shape1 {
+        right: -17%;
+        top: 3%;
+    }
+    .habilidades__background-shape2 {
+        width: 40%;
+    }
+    .habilidades__card-container {
+        flex-wrap: nowrap;
+    }
+
+    .habilidades__card-container--tecnicas{
+        flex-wrap: wrap;
+        padding-left: 6rem;
     }
     .habilidades__card-icon {
-        max-width: 68%;
+        width: 55%;
     }
     .habilidades__card-title{
         font-size: 15px;
@@ -105,6 +142,10 @@
         font-size: 17px;
 
     }
+
+    .contacto__footer {
+        margin-top: 5rem;
+    }
     .contacto__footer > h4 {
         font-size: 18px;
     }
@@ -113,50 +154,90 @@
 /*Mobile L*/
 @media only screen and (max-width: 425px){
 
+    .section__title {
+        font-size: 22px;
+    }
     /*INICIO*/
     nav{
+        justify-content: center;
         padding: 1rem;
+        background-color: #000000d4;
+    }
+    header{
+        left: 0;
+    }
+
+    nav a{
+        color: var(--color-font-white);
     }
 
     .logo{
         display: none;
     }
 
+    .inicio__background-shape1 {
+        width: 56%;
+    }
+    .inicio__background-shape2 {
+        width: 28%;
+        top: 52%;
+    }
+
     .inicio__container {
-        display: block;
-        margin: 0px 1rem;
-    }
-    .inicio__text{
-     width: auto;
+        margin: 6rem 2rem 0;
+        flex-direction: column;
     }
 
-    .illustration-top{
-        display: block;
-        margin-top: -3rem;
+    .inicio__photo{
+        margin: initial;
     }
-    .illustration-bottom{
-        display: none;
+    
+
+    .inicio__text {
+        margin: 0;
+        display: grid;
+        width: 400px;
+        justify-items: center;
+        text-align: center;
     }
-    .inicio__illustration img {
-        width: -webkit-fill-available;
+    .inicio__title {
+        font-size: 43px;
+        margin-bottom: 0.6rem;
     }
 
-    .inicio__contact {
-        justify-content: center;
+    .inicio__contact{
+        margin: 0;
     }
 
     /*PROYECTOS*/
-    .proyectos__card-container{
-        flex-direction: column;
-    }
-    .proyectos__card{
-        width: auto;
+    .proyectos__card-container {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 
     /*HABILIDADES*/
+    .habilidades {
+        padding: 1rem;
+    }
+
     .habilidades__card-container{
         width: inherit;
         margin: 0;
+    }
+    .habilidades__card-container--tecnicas {
+        padding-left: initial;
+        gap: 2rem;
+    }
+    
+    
+    .habilidades__card-title {
+        font-size: 11px;
+    }
+    .habilidades__background-shape1 {
+        top: 1%;
+    }
+    .habilidades__background-shape2 {
+        left: -18%;
+        top: 27%;
     }
 
     /*CONTACTO*/
