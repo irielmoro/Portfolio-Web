@@ -3,9 +3,8 @@
 /* Document
    ========================================================================== */
 .section__title{
-    color: var(--color-font-black);
+    color: var(--color-font-white);
     font-size: 35px;
-    text-align: center;
 }
 .btn:hover{
   color: #873694 ;
